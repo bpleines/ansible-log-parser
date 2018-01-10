@@ -2,15 +2,15 @@ from sys import argv
 import re
 
 script, logfile, criteria = argv
-if not ('all' in criteria or 'success' in criteria or 'failure' in criteria or 'unreacheable' in criteria):
-        print("The criteria must be either: all, success, failure, or unreacheable")
+if not ('all' in criteria or 'success' in criteria or 'failure' in criteria or 'unreachable' in criteria):
+        print("The criteria must be either: all, success, failure, or unreachable")
         exit(0)
 
 def printSummary():
     hitRecap = False
     successes = []
     failures = []
-    unreacheables = []
+    unreachables = []
     with open(logfile, 'r') as log:
         for line in log:
             if 'PLAY RECAP' in line and not hitRecap:
@@ -18,8 +18,8 @@ def printSummary():
             elif hitRecap:
                 nextLine = line[6:]
                 hostname, tasks = nextLine.split('[0m', 1)
-                if 'unreacheable=1' in tasks:
-                    unreacheables.append(hostname)
+                if 'unreachable=1' in tasks:
+                    unreachables.append(hostname)
                 elif re.search('failed=[1-9+]', tasks):
                     failures.append(hostname)
                 else:
@@ -36,10 +36,10 @@ def printSummary():
         print(f"\nFailures: {len(failures)}")
         for failure in failures:
             print(failure)
-        print(f"\nUnreacheables: {len(unreacheables)}")
-        for unreacheable in unreacheables:
-            print(unreacheable)
-        allHostnames = [successes, failures, unreacheables]
+        print(f"\nUnreachables: {len(unreachables)}")
+        for unreachable in unreachables:
+            print(unreachable)
+        allHostnames = [successes, failures, unreachables]
         return allHostnames
     elif 'success' in criteria:
         print(f"Successes: {len(successes)}")
@@ -51,11 +51,11 @@ def printSummary():
         for failure in failures:
             print(failure)
         return failures
-    elif 'unreacheable' in criteria:
-        print(f"Unreacheables: {len(unreacheables)}")
-        for unreacheable in unreacheables:
-            print(unreacheable)
-        return unreacheables
+    elif 'unreachable' in criteria:
+        print(f"Unreacheables: {len(unreachables)}")
+        for unreachable in unreachables:
+            print(unreachable)
+        return unreachables
     else:
         pass
 

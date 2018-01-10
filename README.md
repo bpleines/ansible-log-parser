@@ -1,10 +1,14 @@
 <h1>Ansible Tower Log Parser</h1>
 <body>
-The following scripts use python3.6 to parse an Ansible Tower log file into successes, failures, and unreachables by hostname
+<p>
+The following scripts use python3.6 to parse an Ansible Tower log file into successes, failures, and unreachables by hostname.
+</p>
 <br>
+<p>
 Usage:
 python3.6 ansibleLogParser.py <logfile>
 python3.6 ansibleLogParserCriteria.py <logfile> <[all,success,failure,unreachable]>
+</p>
 <br>
 Examples:
 <ul>

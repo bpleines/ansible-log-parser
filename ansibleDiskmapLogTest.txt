@@ -14,11 +14,11 @@ TASK [diskmapFinalize : Add the host fqdn paired with its operating system to th
 [0;33mchanged: [rhtubicoe01.prod.redhat.com -> rhtutawx02.prod.redhat.com][0m
 
 PLAY RECAP *********************************************************************
-[0;33mLRLUDCCBPSAPP01.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
-[0;33mLRLUDHESTIBAPI.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
-[0;33mLRLUDHESTIBBW.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
-[0;33mLRLUDHFCM1.prod.redhat.com[0m  : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
-[0;33mLRLUDMDMTIBAPI.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtUDCCBPSAPP01.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtUDHESTIBAPI.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtUDHESTIBBW.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtUDHFCM1.prod.redhat.com[0m  : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtUDMDMTIBAPI.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
 [0;33mrhtubicoe01.prod.redhat.com[0m : [0;32mok=109 [0m [0;33mchanged=76  [0m unreachable=0    failed=0   
 [0;33mrhtubicoe02.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
 [0;33mrhtubtib01.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   

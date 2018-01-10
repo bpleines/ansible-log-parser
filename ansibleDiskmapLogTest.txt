@@ -1,0 +1,119 @@
+[0;32m            "rhtubicoe02.prod.redhat.com"[0m
+[0;32m        ], [0m
+[0;32m        [[0m
+[0;32m            "RedHat Linux 6.8 (Santiago) 2.6.32-642.6.1.el6.x86_64", [0m
+[0;32m            "rhtubicoe01.prod.redhat.com"[0m
+[0;32m        ][0m
+[0;32m    ][0m
+[0;32m}[0m
+
+TASK [diskmapFinalize : Cleans up for a fresh list in diskmapEnvironment.txt] ***
+[0;33mchanged: [rhtubicoe01.prod.redhat.com -> rhtutawx02.prod.redhat.com][0m
+
+TASK [diskmapFinalize : Add the host fqdn paired with its operating system to the master list] ***
+[0;33mchanged: [rhtubicoe01.prod.redhat.com -> rhtutawx02.prod.redhat.com][0m
+
+PLAY RECAP *********************************************************************
+[0;33mLRLUDCCBPSAPP01.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mLRLUDHESTIBAPI.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mLRLUDHESTIBBW.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mLRLUDHFCM1.prod.redhat.com[0m  : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mLRLUDMDMTIBAPI.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubicoe01.prod.redhat.com[0m : [0;32mok=109 [0m [0;33mchanged=76  [0m unreachable=0    failed=0   
+[0;33mrhtubicoe02.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubtib01.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubtib02.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubtib03.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubtib04.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubtib05.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubtib06.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubtib07.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubtib08.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubtib09.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubtib10.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubtib11.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubtib12.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubtib13.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubtib14.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubtib15.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubtib16.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtudavmpoc.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtuddba1.prod.redhat.com[0m : [0;32mok=102 [0m [0;33mchanged=68  [0m unreachable=0    failed=0   
+[0;33mrhtupawx01.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=73  [0m unreachable=0    failed=0   
+[0;33mrhtutapg02.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=73  [0m unreachable=0    failed=0   
+[0;33mrhtutawx02.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=73  [0m unreachable=0    failed=0   
+[0;33mrhtutims4.prod.redhat.com[0m : [0;32mok=101 [0m [0;33mchanged=68  [0m unreachable=0    failed=0   
+[0;33mrhtuzcrt.prod.redhat.com[0m  : [0;32mok=123 [0m [0;33mchanged=90  [0m unreachable=0    failed=0   
+[0;33mrhtuadcnm.prod.redhat.com[0m   : [0;32mok=93  [0m [0;33mchanged=66  [0m unreachable=0    failed=0   
+[0;33mrhtubmdmseip1.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubmdmseip2.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubmdmseip3.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubmdmseip4.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubmdmseip5.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubmdmseip6.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubtib01.prod.redhat.com[0m  : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubtib02.prod.redhat.com[0m  : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubtib03.prod.redhat.com[0m  : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubtib04.prod.redhat.com[0m  : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubtib05.prod.redhat.com[0m  : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubtib06.prod.redhat.com[0m  : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubtib07.prod.redhat.com[0m  : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubtib08.prod.redhat.com[0m  : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubtib09.prod.redhat.com[0m  : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubtib10.prod.redhat.com[0m  : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubtib20.prod.redhat.com[0m  : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubtib21.prod.redhat.com[0m  : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubtib22.prod.redhat.com[0m  : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;31mrhtubtib23.prod.redhat.com[0m  : ok=0    changed=0    unreachable=0    [0;31mfailed=1   [0m
+[0;31mrhtubtib24.prod.redhat.com[0m  : ok=0    changed=0    unreachable=0    [0;31mfailed=1   [0m
+[0;31mrhtubtib25.prod.redhat.com[0m  : ok=0    changed=0    unreachable=0    [0;31mfailed=1   [0m
+[0;33mrhtubtib26.prod.redhat.com[0m  : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubtib27.prod.redhat.com[0m  : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubtib28.prod.redhat.com[0m  : [0;32mok=95  [0m [0;33mchanged=71  [0m unreachable=0    failed=0   
+[0;33mrhtubtib29.prod.redhat.com[0m  : [0;32mok=95  [0m [0;33mchanged=71  [0m unreachable=0    failed=0   
+[0;33mrhtubtib30.prod.redhat.com[0m  : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtubtib31.prod.redhat.com[0m  : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtudcfs01.prod.redhat.com[0m  : [0;32mok=95  [0m [0;33mchanged=71  [0m unreachable=0    failed=0   
+[0;33mrhtuddevop1.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=73  [0m unreachable=0    failed=0   
+[0;33mrhtuddevop2.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=73  [0m unreachable=0    failed=0   
+[0;33mrhtudedmsapp01.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtudeip1.prod.redhat.com[0m   : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;31mrhtudeip2.prod.redhat.com[0m   : [0;32mok=41  [0m [0;33mchanged=19  [0m unreachable=0    [0;31mfailed=1   [0m
+[0;33mrhtudemrep1.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtudfbx1app.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtudfbx1web.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtudfcfgapp.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtudfcfgweb.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtudfcnvapp.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtudfcnvweb.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtudfdevapp.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtudfdevweb.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtudfdmoapp.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtudfdmoweb.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtudhbx1app.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtudhbx1web.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtudhcfgapp.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtudhcfgweb.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtudhcnvapp.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtudhcnvweb.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtudhdevapp.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtudhdmoapp1.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtudhdmoweb1.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtudhprlweb.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtudhsit2web.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtudhsitapp.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtudhsitweb.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtudhtlt2web.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtudhtltapp.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtudhtltweb.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtudhtrmapp.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtudhtrmweb.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtudhuatapp.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtudhuatweb.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtudisb3.prod.redhat.com[0m   : [0;32mok=94  [0m [0;33mchanged=68  [0m unreachable=0    failed=0   
+[0;33mrhtudisb5.prod.redhat.com[0m   : [0;32mok=93  [0m [0;33mchanged=66  [0m unreachable=0    failed=0   
+[0;33mrhtudisb8.prod.redhat.com[0m   : [0;32mok=94  [0m [0;33mchanged=68  [0m unreachable=0    failed=0   
+[0;33mrhtudmaxapp1.prod.redhat.com[0m : [0;32mok=96  [0m [0;33mchanged=72  [0m unreachable=0    failed=0   
+[0;33mrhtudmaxsnd1.prod.redhat.com[0m : [0;32mok=95  [0m [0;33mchanged=71  [0m unreachable=0    failed=0   
+[0;33mrhtupsvhapp1.prod.redhat.com[0m : [0;32mok=92  [0m [0;33mchanged=62  [0m unreachable=0    failed=0   
+[0;33mrhtupsvhapp2.prod.redhat.com[0m : [0;32mok=92  [0m [0;33mchanged=62  [0m unreachable=0    failed=0   

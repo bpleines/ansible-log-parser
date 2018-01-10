@@ -5,11 +5,11 @@ The following scripts use python3.6 to parse an Ansible Tower log file into succ
 ansibleLogParser.py and ansibleLogParserCriteria.py are designed to take the human assessment out and quickly return a summary of your job to you on your terminal.
 </p>
 <br>
-<p>
 Usage:
-python3.6 ansibleLogParser.py <logfile>
-python3.6 ansibleLogParserCriteria.py <logfile> <[all,success,failure,unreachable]>
-</p>
+<ul>
+<li>python3.6 ansibleLogParser.py <logfile></li>
+<li>python3.6 ansibleLogParserCriteria.py <logfile> <[all,success,failure,unreachable]></li>
+</ul>
 <br>
 Examples:
 <ul>

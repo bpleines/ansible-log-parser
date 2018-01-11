@@ -8,7 +8,7 @@ args = parser.parse_args()
 
 if args.criteria not in ['all','success','failure','unreachable']:
         print("The --criteria or -c option must be one of: all, success, failure, or unreachable")
-        exit(0)
+        exit(1)
 
 def printSummary():
     hitRecap = False

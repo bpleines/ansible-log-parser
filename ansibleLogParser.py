@@ -6,7 +6,7 @@ parser.add_argument('-l', '--logfile', required=True, help='The log file that yo
 parser.add_argument('-c', '--criteria', default='all', help='Whether you want to see "all" output parsed (default) or only the "success", "failure", or "unreachable" output')
 args = parser.parse_args()
 
-if not ('all' in args.criteria or 'success' in args.criteria or 'failure' in args.criteria or 'unreachable' in args.criteria):
+if args.criteria not in ['all','success','failure','unreachable']:
         print("The --criteria or -c option must be one of: all, success, failure, or unreachable")
         exit(0)
 

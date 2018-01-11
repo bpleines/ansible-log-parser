@@ -26,21 +26,17 @@ def printSummary():
             else:
                 pass
 
-    #For 2.7 compatibility
-    successCount = len(successes)
-    failureCount = len(failures)
-    unreachableCount = len(unreachables)
-       
+    #Commented lines are python3 syntax       
     #print(f"Successes: {successes}")
-    print("Successes: " + str(successCount)) 
+    print("Successes: " + str(len(successes))) 
     for success in successes:
         print(success)
     #print(f"\nFailures: {len(failures)}")
-    print("\nFailures: " + str(failureCount))
+    print("\nFailures: " + str(len(failures)))
     for failure in failures:
         print(failure)
     #print(f"\nUnreacheables: {len(unreachables)}")
-    print("\nUnreachable: " + str(unreachableCount))
+    print("\nUnreachable: " + str(len(unreachables)))
     for unreachable in unreachables:
         print(unreachable)
 

@@ -28,39 +28,36 @@ def printSummary():
                 #This should theortically never run
                 pass
 
-    #For 2.7 compatibility
-    successCount = len(successes)
-    failureCount = len(failures)
-    unreachableCount = len(unreachables)
-    
+
+    #Commented lines are python3 syntax - adjusted to be python2.7 compatible
     #The print statements can be commented out to return the list of criteria 
     if 'all' in criteria:
         #print(f"\nSuccesses: {len(successes)}")
-        print("Successes: " + str(successCount))
+        print("Successes: " + str(len(successes)))
         for success in successes:
             print(success)
         #print(f"\nFailures: {len(failures)}")
-        print("\nFailures: " + str(failureCount))
+        print("\nFailures: " + str(len(failures)))
         for failure in failures:
             print(failure)
         #print(f"\nUnreacheables: {len(unreachables)}")
-        print("\nUnreachable: " + str(unreachableCount))
+        print("\nUnreachable: " + str(len(unreachables)))
         for unreachable in unreachables:
             print(unreachable)
         allHostnames = [successes, failures, unreachables]
         return allHostnames
     elif 'success' in criteria:
-        print("Successes: " + str(successCount))
+        print("Successes: " + str(len(successes)))
         for success in successes:
             print(success)
         return successes
     elif 'failure' in criteria:
-        print("\nFailures: " + str(failureCount))
+        print("\nFailures: " + str(len(failures)))
         for failure in failures:
             print(failure)
         return failures
     elif 'unreachable' in criteria:
-        print("\nUnreachable: " + str(unreachableCount))
+        print("\nUnreachable: " + str(len(unreachables)))
         for unreachable in unreachables:
             print(unreachable)
         return unreachables

@@ -1,3 +1,5 @@
+from __future__ import print_function
+
 from sys import argv
 import re
 
@@ -23,14 +25,22 @@ def printSummary():
                     successes.append(hostname)
             else:
                 pass
+
+    #For 2.7 compatibility
+    successCount = len(successes)
+    failureCount = len(failures)
+    unreachableCount = len(unreachables)
        
-    print(f"Successes: {len(successes)}")
+    #print(f"Successes: {successes}")
+    print("Successes: " + str(successCount)) 
     for success in successes:
         print(success)
-    print(f"\nFailures: {len(failures)}")
+    #print(f"\nFailures: {len(failures)}")
+    print("\nFailures: " + str(failureCount))
     for failure in failures:
         print(failure)
-    print(f"\nUnreacheables: {len(unreachables)}")
+    #print(f"\nUnreacheables: {len(unreachables)}")
+    print("\nUnreachable: " + str(unreachableCount))
     for unreachable in unreachables:
         print(unreachable)
 

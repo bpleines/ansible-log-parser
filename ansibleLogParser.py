@@ -6,6 +6,7 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('-l', '--logfile', required=True, help='The log file that you want to parse')
 parser.add_argument('-c', '--criteria', default='all', help='Whether you want to see "all" output parsed (default) or only the "success", "failure", or "unreachable" output')
+parser.add_argument('-o', '--output', required=False, help='Specify an output file to store the output')
 args = parser.parse_args()
 
 if args.criteria not in ['all','success','failure','unreachable']:
@@ -33,41 +34,47 @@ def printSummary():
             else:
                 #This should theortically never run
                 pass
-
-
-    #Commented lines are python3 syntax - adjusted to be python2.7 compatible
-    #The print statements can be commented out to return the list of criteria
+    
+    #=+ syntax chosen for readability - could use join() with lists instead
+    outputFileString = ''
     if 'all' in args.criteria:
-        #print(f"\nSuccesses: {len(successes)}")
-        print("Successes: " + str(len(successes)))
-        for success in successes:
-            print(success)
-        #print(f"\nFailures: {len(failures)}")
-        print("\nFailures: " + str(len(failures)))
+        outputFileString += "Successes: " + str(len(successes)) + "\n"
+        for success in successes:            
+            outputFileString += success + "\n"
+        outputFileString += "\nFailures: " + str(len(failures)) + "\n"
         for failure in failures:
-            print(failure)
-        #print(f"\nUnreacheables: {len(unreachables)}")
-        print("\nUnreachable: " + str(len(unreachables)))
+            outputFileString += failure + "\n"
+        outputFileString += "\nUnreachables: " + str(len(unreachables)) + "\n"
         for unreachable in unreachables:
-            print(unreachable)
+            outputFileString += unreachable + "\n"
+        finalize(outputFileString)
         allHostnames = [successes, failures, unreachables]
         return allHostnames
     elif 'success' in args.criteria:
-        print("Successes: " + str(len(successes)))
+        outputFileString += "Successes: " + str(len(successes)) + "\n"
         for success in successes:
-            print(success)
+            outputFileString += success + "\n"
+        finalize(outputFileString)
         return successes
     elif 'failure' in args.criteria:
-        print("\nFailures: " + str(len(failures)))
+        outputFileString += "Failures: " + str(len(failures)) + "\n"
         for failure in failures:
-            print(failure)
+            outputFileString += failure + "\n"
+        finalize(outputFileString)
         return failures
     elif 'unreachable' in args.criteria:
-        print("\nUnreachable: " + str(len(unreachables)))
+        outputFileString += "Unreachables: " + str(len(unreachables)) + "\n"
         for unreachable in unreachables:
-            print(unreachable)
+            outputFileString += failure + "\n"
+        finalize(outputFileString)
         return unreachables
     else:
         pass
+
+def finalize(outputFileString):
+    print(outputFileString)
+    if args.output:
+        with open(args.output, 'w') as outputFile:
+            outputFile.write(outputFileString)
 
 result = printSummary()

@@ -35,7 +35,7 @@ def printSummary():
                 #This should theortically never run
                 pass
     
-    #=+ syntax chosen for readability - could use join() with lists instead
+    #+= syntax chosen for readability - could use join() with a list instead
     outputFileString = ''
     if 'all' in args.criteria:
         outputFileString += "Successes: " + str(len(successes)) + "\n"

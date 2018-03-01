@@ -23,8 +23,13 @@ def printSummary():
             if 'PLAY RECAP' in line and not hitRecap:
                 hitRecap = True
             elif hitRecap:
-                nextLine = line[6:]
-                hostname, tasks = nextLine.split('[0m', 1)
+                #Tower 3.0.3 log compatible
+                if '[0m' in line:
+                    nextLine = line[6:]
+                    hostname, tasks = nextLine.split('[0m', 1)
+                #Tower 3.2.3 log compatible
+                else:
+                    hostname, tasks = line.split(' : ',1)
                 if 'unreachable=1' in tasks:
                     unreachables.append(hostname)
                 elif re.search('failed=[1-9+]', tasks):

@@ -1,5 +1,6 @@
 # Ansible Tower Log Parser
 _tested on python2.7 & 3.6_
+_tested on tower v3.0.3 and v3.2.3 logs_
 
 The following script uses python to parse an Ansible Tower log file into successes, failures, and unreachables by hostname. Ansible Tower jobs can run against large inventories and there are times that digging through the Play Recap can be a cumbersome task. This script is designed to remove human assessment and quickly return a summary of a job to the terminal or in an output file.
 

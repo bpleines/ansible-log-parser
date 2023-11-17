@@ -12,14 +12,14 @@ args = parser.parse_args()
 
 if args.criteria not in ['all','success','failure','unreachable']:
     print("The --criteria or -c option must be one of: all, success, failure, or unreachable")
-    exit(1)
+    sys.exit(1)
 
 def print_summary():
     hit_recap = False
     successes = []
     failures = []
     unreachables = []
-    with open(args.logfile, 'r') as log:
+    with open(args.logfile, 'r', encoding="utf-8") as log:
         for line in log:
             if 'PLAY RECAP' in line and not hit_recap:
                 hit_recap = True

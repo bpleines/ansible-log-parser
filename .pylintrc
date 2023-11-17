@@ -4,3 +4,6 @@
 # multiple time (only on the command line, not in the configuration file where
 # it should appear only once).
 disable=C0114,C0115,C0116,W1203,W0104,C0415
+
+[MAIN]
+fail-under=9.28

@@ -1,3 +1,5 @@
+[![static-code-analysis](https://github.com/bpleines/ansible-log-parser/actions/workflows/static-code-analysis.yaml/badge.svg)](https://github.com/bpleines/ansible-log-parser/actions/workflows/static-code-analysis.yaml)
+
 # Ansible Tower Log Parser
 
 The following script uses python to parse an Ansible Tower log file into successes, failures, and unreachables by hostname. Ansible Tower jobs can run against large inventories and there are times that digging through the Play Recap can be a cumbersome task. This script is designed to remove human assessment and quickly return a summary of a job to the terminal or in an output file.

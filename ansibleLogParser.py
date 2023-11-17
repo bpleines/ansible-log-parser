@@ -10,8 +10,8 @@ parser.add_argument('-o', '--output', required=False, help='Specify an output fi
 args = parser.parse_args()
 
 if args.criteria not in ['all','success','failure','unreachable']:
-        print("The --criteria or -c option must be one of: all, success, failure, or unreachable")
-        exit(1)
+  print("The --criteria or -c option must be one of: all, success, failure, or unreachable")
+  exit(1)
 
 def printSummary():
     hitRecap = False
@@ -39,12 +39,12 @@ def printSummary():
             else:
                 #This should theortically never run
                 pass
-    
+
     #+= syntax chosen for readability - could use join() with a list instead
     outputFileString = ''
     if 'all' in args.criteria:
         outputFileString += "Successes: " + str(len(successes)) + "\n"
-        for success in successes:            
+        for success in successes:
             outputFileString += success + "\n"
         outputFileString += "\nFailures: " + str(len(failures)) + "\n"
         for failure in failures:

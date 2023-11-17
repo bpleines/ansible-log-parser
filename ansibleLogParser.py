@@ -41,45 +41,45 @@ def printSummary():
                 pass
 
     #+= syntax chosen for readability - could use join() with a list instead
-    outputFileString = ''
+    output_file_string = ''
     if 'all' in args.criteria:
-        outputFileString += "Successes: " + str(len(successes)) + "\n"
+        output_file_string += "Successes: " + str(len(successes)) + "\n"
         for success in successes:
-            outputFileString += success + "\n"
-        outputFileString += "\nFailures: " + str(len(failures)) + "\n"
+            output_file_string += success + "\n"
+        output_file_string += "\nFailures: " + str(len(failures)) + "\n"
         for failure in failures:
-            outputFileString += failure + "\n"
-        outputFileString += "\nUnreachables: " + str(len(unreachables)) + "\n"
+            output_file_string += failure + "\n"
+        output_file_string += "\nUnreachables: " + str(len(unreachables)) + "\n"
         for unreachable in unreachables:
-            outputFileString += unreachable + "\n"
-        finalize(outputFileString)
+            output_file_string += unreachable + "\n"
+        finalize(output_file_string)
         allHostnames = [successes, failures, unreachables]
         return allHostnames
     elif 'success' in args.criteria:
-        outputFileString += "Successes: " + str(len(successes)) + "\n"
+        output_file_string += "Successes: " + str(len(successes)) + "\n"
         for success in successes:
-            outputFileString += success + "\n"
-        finalize(outputFileString)
+            output_file_string += success + "\n"
+        finalize(output_file_string)
         return successes
     elif 'failure' in args.criteria:
-        outputFileString += "Failures: " + str(len(failures)) + "\n"
+        output_file_string += "Failures: " + str(len(failures)) + "\n"
         for failure in failures:
-            outputFileString += failure + "\n"
-        finalize(outputFileString)
+            output_file_string += failure + "\n"
+        finalize(output_file_string)
         return failures
     elif 'unreachable' in args.criteria:
-        outputFileString += "Unreachables: " + str(len(unreachables)) + "\n"
+        output_file_string += "Unreachables: " + str(len(unreachables)) + "\n"
         for unreachable in unreachables:
-            outputFileString += unreachable + "\n"
-        finalize(outputFileString)
+            output_file_string += unreachable + "\n"
+        finalize(output_file_string)
         return unreachables
     else:
         pass
 
-def finalize(outputFileString):
-    print(outputFileString)
+def finalize(output_file_string):
+    print(output_file_string)
     if args.output:
         with open(args.output, 'w') as outputFile:
-            outputFile.write(outputFileString)
+            outputFile.write(output_file_string)
 
 result = printSummary()

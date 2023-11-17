@@ -70,7 +70,7 @@ def printSummary():
     elif 'unreachable' in args.criteria:
         outputFileString += "Unreachables: " + str(len(unreachables)) + "\n"
         for unreachable in unreachables:
-            outputFileString += failure + "\n"
+            outputFileString += unreachable + "\n"
         finalize(outputFileString)
         return unreachables
     else:

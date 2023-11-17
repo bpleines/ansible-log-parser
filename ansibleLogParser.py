@@ -5,8 +5,18 @@ import argparse
 import sys
 
 parser = argparse.ArgumentParser()
-parser.add_argument('-l', '--logfile', required=True, help='The log file that you want to parse')
-parser.add_argument('-c', '--criteria', default='all', help='Whether you want to see "all" output parsed (default) or only the "success", "failure", or "unreachable" output')
+parser.add_argument(
+    '-l',
+    '--logfile',
+    required=True,
+    help='The log file that you want to parse'
+)
+parser.add_argument(
+    '-c',
+    '--criteria',
+    default='all',
+    help='Whether you want to see "all" output parsed (default) or only the "success", "failure", or "unreachable" output'
+)
 parser.add_argument('-o', '--output', required=False, help='Specify an output file to store the output')
 args = parser.parse_args()
 

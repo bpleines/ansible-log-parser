@@ -90,7 +90,7 @@ def print_summary():
 def finalize(output_file_string):
     print(output_file_string)
     if args.output:
-        with open(args.output, 'w') as output_file:
+        with open(args.output, 'w', encoding="utf-8") as output_file:
             output_file.write(output_file_string)
 
 result = print_summary()

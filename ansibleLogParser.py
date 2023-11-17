@@ -14,19 +14,19 @@ if args.criteria not in ['all','success','failure','unreachable']:
   exit(1)
 
 def printSummary():
-    hitRecap = False
+    hit_recap = False
     successes = []
     failures = []
     unreachables = []
     with open(args.logfile, 'r') as log:
         for line in log:
-            if 'PLAY RECAP' in line and not hitRecap:
-                hitRecap = True
-            elif hitRecap:
+            if 'PLAY RECAP' in line and not hit_recap:
+                hit_recap = True
+            elif hit_recap:
                 #Tower 3.0.3 log compatible
                 if '[0m' in line:
-                    nextLine = line[6:]
-                    hostname, tasks = nextLine.split('[0m', 1)
+                    next_line = line[6:]
+                    hostname, tasks = next_line.split('[0m', 1)
                 #Tower 3.2.3 log compatible
                 else:
                     hostname, tasks = line.split(' : ',1)

@@ -1,15 +1,14 @@
 # Ansible Tower Log Parser
-_tested on python2.7 & 3.6_
 
 The following script uses python to parse an Ansible Tower log file into successes, failures, and unreachables by hostname. Ansible Tower jobs can run against large inventories and there are times that digging through the Play Recap can be a cumbersome task. This script is designed to remove human assessment and quickly return a summary of a job to the terminal or in an output file.
 
 _tested on Tower v3.0.3 & v3.2.3_
 
 ## Usage:
-`ansibleLogParser.py -h`
-  
+`python ansible_log_parser.py -h`
+
 ```
-usage: ansibleLogParser.py [-h] -l LOGFILE [-c CRITERIA] [-o OUTPUT]
+usage: python ansible_log_parser.py [-h] -l LOGFILE [-c CRITERIA] [-o OUTPUT]
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -22,12 +21,12 @@ optional arguments:
   -o OUTPUT, --output OUTPUT
 			Additionally direct printed information to an output file
  ```
- 
+
 ## Example Usage and Outputs:
 
 ### Show all output
 
-`ansibleLogParser.py -l ansibleDiskmapLogTest.txt` 
+`python ansible_log_parser.py -l ansibleDiskmapLogTest.txt`
 
 ```
 Successes: 6
@@ -49,7 +48,7 @@ rhtubtib66.prod.redhat.com
 
 ```
 ### Show only success output
-`ansibleLogParser.py -l ansibleDiskmapLogTest.txt -c success` 
+`python ansible_log_parser.py -l ansibleDiskmapLogTest.txt -c success`
 ```
 Successes: 6
 rhtudhtltapp.prod.redhat.com
@@ -61,7 +60,7 @@ rhtudhuatweb.prod.redhat.com
 ```
 
 ### Show only failure output
-`ansibleLogParser.py -l ansibleDiskmapLogTest.txt -c failure` 
+`python ansible_log_parser.py -l ansibleDiskmapLogTest.txt -c failure`
 ```
 Failures: 4
 rhtubtib23.prod.redhat.com
@@ -71,7 +70,7 @@ rhtudeip2.prod.redhat.com
 ```
 
 ### Show only unreachable output
-`ansibleLogParser.py -l ansibleDiskmapLogTest.txt -c unreachable` 
+`python ansible_log_parser.py -l ansibleDiskmapLogTest.txt -c unreachable`
 ```
 Unreachable: 1
 rhtubtib66.prod.redhat.com
